@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #333;
+    color: #ffff;
+    height: 100vh;
+    line-height: 1.6;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+  }
+  
+  .small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .navigation {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  
+  .navigation ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navigation ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  .navigation ul li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0,0,0,1);
+  }
+  
+  .navigation ul li a:hover {
+    color: lightslategray;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+  #home {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #about {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #create {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  section h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+  }
+  section p {
+    font-family: 'Roboto', sans-serif;
+  }
+  .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+      
+  
+  .button:hover {
+    background-color: lightslategray;
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+    color: white;
+  }
+  li {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #home {
+    background: url('https://images.unsplash.com/photo-1548983965-416c1920352e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80') no-repeat center center/cover;;
+  }
+  
+  #about {
+    background: url('https://images.unsplash.com/photo-1621063615013-676050ff916d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80') no-repeat center center/cover;;
+  }
+  
+  #create {
+    background: url('https://images.unsplash.com/photo-1518623001395-125242310d0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80') no-repeat center center/cover;;
+  }

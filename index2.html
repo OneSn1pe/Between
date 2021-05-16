@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Between</title>
+</head>
+<body>
+    <div class="full">
+        <div class="part" id="ag">
+                <form id="anything">
+                <input type="button" id="addNewEvent" value="Add New Event" onclick="createNewEvent()">
+                
+                <input type="button" id="submitEvent" value="Submit Events" onclick="submit12()">
+                
+                <div class="formBox">
+                    <input type="text" class="event" placeholder="Event"/>
+                </div>
+                <div class="formBox">
+                    <input type="number" class="year" placeholder="Year"/>
+                </div>
+                <div class="formbox">
+                    <input type="textarea" class="description" placeholder="Description">
+                </div>
+            </form>
+            <div class="outer" style="visibility: hidden;" id="hello">
+                <input type="button" id="report" value="Generate Timeline" onclick="final()" class="generate">
+                <TABLE id="dataTable" width="350px" border="1" class="dt">
+            
+                    <TR>
+                    <TD>event</TD>
+                    <TD>year</TD>
+                    <TD>description</TD>
+                    </TR>
+                    </TABLE>
+                    </div>
+            </div>
+        </div> 
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
